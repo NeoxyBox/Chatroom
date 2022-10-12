@@ -5,6 +5,8 @@ import logging
 import socket
 from . import chatbase
 
+chatbase.
+
 print(Fore.RED + "Bu uygulama loglama sistemine sahiptir lütfen saygı çerçevesinde ve kibarca konuşmaya dikkat edin !")
 time.sleep(2)
 print("Araç başlatılıyor...")
