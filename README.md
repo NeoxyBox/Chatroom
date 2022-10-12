@@ -1,84 +1,61 @@
-<h1>Chatroom</h1> 
+# Chatroom | A basic "socket" based chatroom
 
-![License: GPL v3](https://img.shields.io/github/license/Kerxunos/Chatroom)
-![Coding](https://img.shields.io/github/languages/top/Kerxunos/Chatroom)
-![Size](https://img.shields.io/github/languages/code-size/Kerxunos/Chatroom)
+![License: GPL v3](https://img.shields.io/github/license/NeoxyBox/Chatroom)
+![Coding](https://img.shields.io/github/languages/top/NeoxyBox/Chatroom)
+![Size](https://img.shields.io/github/languages/code-size/NeoxyBox/Chatroom)
 ![Colorama](https://img.shields.io/pypi/v/colorama)
 ![Observatory_Grade](https://img.shields.io/mozilla-observatory/grade/github.com?publish)
-![commit_acitivity](https://img.shields.io/github/commit-activity/w/Kerxunos/Chatroom)
+![commit_acitivity](https://img.shields.io/github/commit-activity/w/NeoxyBox/Chatroom)
 ![pyapi_format](https://img.shields.io/pypi/format/colorama)
+
+*Forked from [Kerxunos](https://github.com/Kerxunos/Chatroom)*
 
 ![Chatroom2](https://user-images.githubusercontent.com/113096235/195297547-76ce4d07-80ef-4705-a112-24c373ced67b.png)
 
+**Reminder:** This tool educational purposes only, the developer does not take any responsibility.
 
-**IMPORTANT WARNING: THIS TOOL IS JUST FOR EDUCATIONAL PURPOSES ONLY WE ARE NOT TAKE ANY RESPONSIBILITY !!!!**
+## Installation
 
-**IMPORTANT WARNING: THIS PROGRAM IS USES LOG SYSTEM PLEASE BE POLITE AND BE CAREFULL YOUR SPEECH !!**
-
-**THIS TOOL HAS ONLY ONE LANGUAGE SUPPORT AVABILE LANGUAGES: TURKEY(TR), WE WILL ADD NEW LANGUAGES POSSIBLE LANGUAGE IS ENGLISH(EN)**
-
-__-----------------------------------------------------------------------------------------------------------------------__
-
-***Installation***
-```
-git clone https://github.com/Kerxuons/Chatroom
+```bash
+git clone https://github.com/NeoxyBox/Chatroom
 ```
 
-***if you get a module not found error you can download it like this:***
+## Log files
 
-```python
-pip install colorama
-```
+Log files are created in the path of the executable.
 
-__-----------------------------------------------------------------------------------------------------------------------__
+## Role System | WIP
 
-*LOG SYSTEM*
+### Admin role
+1. `Admin` has all permissions.
+2. `Admin` can assign roles.
+4. `Admin` can not change roles of other admins.
+5. Server's role is `Admin` by default.
 
-you can find the log file in the program path or file
-if you are the server your log file name is will be: Server_INFO.log
-if you are the client your log file name is will be: Client_INFO.log
-server cant acces client's log file 
-server and client is can accces only own log files
-your IP Address, Messages(including client's messages), Client's IP Address(if you use), etc. in the server's log file
-your IP Address, Messages(includin Server's messages), etc. in the client's log file
+### Default role
+1. `Default` role can only read/write messages.
+2. Client's role is `Default` by default.
 
-__-----------------------------------------------------------------------------------------------------------------------__
+### Custom roles
+1. Custom roles can not assign roles.
+2. Custom roles can read/write messages by default.
 
-*SERVER*
+## Command Set
 
-server is important because server is binds the connection
-server has special commands like /client_ip, /kick, /shutdown etc.
-server can be see the client's IP Adrress I add this feature because i worried about the unknown connections, if you doubt about the connection you can identify the connection with this feature
+Commands starts with  `su!` (or your custom prefix.)
 
-__-----------------------------------------------------------------------------------------------------------------------__
+- `client_ip <client_id>`
+- `kick <client_id>`
+- `shutdown -t <miliseconds>`
+- `clear`
+- `add_command <file_path>`
 
-*SERVER COMMANDS*
-
-- /client_ip: server uses this command to see the client's IP Address (but this a new feature it can be buggy)
-- /kick: server uses this command to kick the client (you must restart the application but we will fix that bug)
-- /shutdown: server uses this command for turn off the application and connection
-- /clear: server uses this command for clear the text (but this command is NOT delete the log)
-we will add new commands...
-
-__-----------------------------------------------------------------------------------------------------------------------__
-
-*CLIENT*
-
-client is depend on the server
-first server binds the connection then client is connects the server
-client is can just chatting and connecting the server
-but we will add new features to client dont worry
-
-__-----------------------------------------------------------------------------------------------------------------------__
-
-*MY TASK LIST*
+## Road
 
 - [x] Update the program 
 - [x] Add new features 
 - [x] Make README.md better
-- [ ] Add English language support
+- [ ] Add localization system
 - [ ] Debug the program
 
-__-----------------------------------------------------------------------------------------------------------------------__
-
-*THANK YOU FOR READ THE README.md ENJOY*
+<3
