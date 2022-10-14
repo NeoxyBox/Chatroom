@@ -50,7 +50,7 @@ Commands starts with  `su!` (or your custom prefix.)
 - `clear`
 - `add_command <file_path>`
 
-## Road
+## Roadmap
 
 - [x] Update the program 
 - [x] Add new features 
